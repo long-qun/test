@@ -43,6 +43,7 @@ public class CookieUtil {
 			for (Cookie cookie : cookies) {
 				if (cookie.getName().equals(name)) {
 					value = cookie.getValue();
+					System.out.println(6666);
 				}
 			}
 		}
@@ -57,5 +58,6 @@ public class CookieUtil {
 	public static void removeCookie(HttpServletResponse response, String name, String domain, String path) {
 		setCookie(response, name, "", domain, path, 0);
 	}
+	
 }
 
